@@ -35,3 +35,13 @@ variable "ssm_private_subnet_2" {
 variable "ssm_private_subnet_3" {
 
 }
+
+#Load Balancer
+
+variable "load_balancer_internal"{
+
+}
+
+variable "load_balancer_type" {
+  
+}
