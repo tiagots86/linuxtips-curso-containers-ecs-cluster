@@ -12,6 +12,16 @@ resource "aws_security_group" "lb" {
     }
 }
 
+resource "aws_security_group_rule" "ingress_80" {
+  cidr_blocks       = ["0.0.0.0/0"]
+  from_port         = 80
+  to_port           = 80
+  description       = "Liberando trafego na porta 80"
+  protocol          = "tcp"
+  security_group_id = aws_security_group.lb.id
+  type              = "ingress"
+}
+
 resource "aws_security_group_rule" "ingress_443" {
     cidr_blocks = ["0.0.0.0/0"]
     from_port = 443
