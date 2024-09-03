@@ -8,7 +8,7 @@ resource "aws_launch_template" "spot" {
   ]
 
   iam_instance_profile {
-    name = "ecsInstanceRole"
+    name = "ecsinstanceRole"
   }
 
   instance_market_options {

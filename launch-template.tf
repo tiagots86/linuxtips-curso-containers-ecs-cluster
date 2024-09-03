@@ -8,7 +8,7 @@ resource "aws_launch_template" "on_demand" {
   ]
 
   iam_instance_profile {
-    name = "ecsInstanceRole"
+    name = "ecsinstanceRole"
   }
 
   update_default_version = true
