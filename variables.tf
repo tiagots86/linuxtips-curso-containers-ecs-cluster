@@ -45,3 +45,22 @@ variable "load_balancer_internal"{
 variable "load_balancer_type" {
   
 }
+
+#ECS Cluster
+
+variable "nodes_ami" {
+  
+}
+
+variable "node_instance_type" {
+
+}
+
+variable "node_volume_size"{
+
+}
+
+variable "node_volume_type" {
+  
+}
+
