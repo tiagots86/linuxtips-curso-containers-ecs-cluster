@@ -14,7 +14,7 @@ resource "aws_launch_template" "on_demand" {
   update_default_version = true
 
   block_device_mappings {
-    device_name = "dev/xvda"
+    device_name = "/dev/xvda"
 
     ebs {
       volume_size = var.node_volume_size
